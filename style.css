@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: hsl(30, 38%, 92%);
+}
+
+.container {
+    background: hsl(0, 0%, 100%);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: 500px;
+    width: 300px;
+    position: fixed;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+
+.teaser {
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #808080;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+h1 {
+    font-family: 'Fraunces';
+    width: 70%;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.info {
+    font-size: 14px;
+    font-family: 'Montserrat';
+    color: #808080;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 80%;
+}
+
+.mainprice {
+    color: rgba(29, 102, 29, 0.685);
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+span {
+    font-size: 14px;
+    color: #808080;
+    margin-left: 20px;
+}
+
+button {
+    margin-left: 20px;
+    margin-top: 60px;
+    width: 85%;
+    height: 50px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 10px;
+    border: 1px transparent;
+    background: rgba(29, 102, 29, 0.685);
+    color: white;
+    font-size: 15px;
+}
+
+button:hover {
+    background: rgba(87, 143, 87, 0.685);
+    cursor: pointer;
+}
+.desktop {
+    height: 500px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    position: fixed;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+@media only screen and (min-width: 500px) {
+    .mobile {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    .desktop {
+        left: 45%;
+        position: fixed;
+    }
+
+    .container {
+        left: 60%;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .container {
+        height: 430px;
+        width: 350px;
+        position: fixed;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-bottom-left-radius: 15px;
+        border-top-right-radius: 0px;
+    }
+
+    .content {
+        margin-top: 50px;
+    }
+
+    h1 {
+        margin-top: 10px;
+    }
+
+    .info {
+        margin-top: 10px;
+    }
+
+    .mainprice {
+        margin-top: 10px;
+    }
+
+    button {
+        margin-top: 10px;
+        margin-left: 28px;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: flex;
+        height: 245px;
+        position: fixed;
+        top: 29%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+    }
+}
+
+footer {
+    text-align: center;
+    margin-top: 890px;
+}
